@@ -1,9 +1,9 @@
 import React from 'react'
-import NavbarConatiner from './components/Layout/NavbarConatiner/Navbar';
+import Landingpage from './components/Layout/Landingpage';
 function App() {
 return (
     <div>
-     <NavbarConatiner/>
+     <Landingpage/>
     </div>
   )
 }
