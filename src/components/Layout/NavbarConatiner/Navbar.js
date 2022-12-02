@@ -12,7 +12,7 @@ class NavbarConatiner extends Component {
   render() {
     return (
       
-        <NavbarView />
+        <NavbarView {...this.props} />
       
     )
   }

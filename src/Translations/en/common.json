@@ -1,0 +1,11 @@
+{
+    "navbar": {
+        "sidebar_title": "Hello, Sign In",
+        "sidebar_help": "HELP AND SETTINGS",
+        "btn_account_title":"Your Account",
+        "btn_signin_title":"Sign In",
+        "menu_signin_btn_title":"Signin",
+        "menu_signin_sub_title":"New customer",
+        "menu_signin_register_text":"Start here"
+    }
+}
