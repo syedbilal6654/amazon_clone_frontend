@@ -3,9 +3,87 @@
         "sidebar_title": "हैलो, साइन इन",
         "sidebar_help": "सहायता और सेटिंग्स",
         "btn_account_title":"आपका खाता",
+        "flag_en":"अंग्रेज़ी",
+        "flag_in":"हिन्दी",
+        "flag_pk":"उर्दू",
+        "flag_bd":"बांग्ला",
         "btn_signin_title":"साइन इन करें",
         "menu_signin_btn_title":"साइन इन करें",
         "menu_signin_sub_title":"नए ग्राहक",
-        "menu_signin_register_text":"शुरुआत खोना"
-    }
+        "menu_signin_register_text":"शुरुआत खोना",
+        "product_category":{
+            "all":"सब",
+            "smartphone":"स्मार्टफोन",
+            "kitchen_hardware":"रसोई हार्डवेयर",
+            "prime_deal":"प्राइम डील",
+            "book":"किताब"
+        }
+    },
+    "footer":{
+        "back_to_top":"वापस शीर्ष पर",
+        "upper":{
+            "col1":{
+                "title":"हमारे बारे में जानिए",
+                "about":"हमारे बारे में",
+                "careers":"करियर",
+                "press_release":"प्रेस विज्ञप्ति",
+                "investments":"निवेश",
+                "offers":"ऑफर"
+            },
+            "col2":{
+               "title":"हमारे साथ जुड़ें",
+                "facebook":"फेसबुक",
+                "instagram":"इंस्टाग्राम",
+                "twitter":"ट्विटर"
+            } ,
+            "col3":{
+               "title":"हमारे साथ पैसे कमाएँ",
+                "sell_on_amazon":"अमेज़न पर बेचें",
+                "affiliate":"संबद्ध विपणन",
+                "fulfillment":"पूर्ति केंद्र",
+                "investments":"निवेश",
+                "amazon_pay":"अमेज़न भुगतान"
+            } ,
+              "col4":{
+               "title":"हमें अपनी सहायता करने दें",
+                "covid_19":"कोविड 19",
+                "your_account":"आपका खाता",
+                "return_centre":"वापसी केंद्र",
+                "help":"मदद करना"
+            }
+        },
+        "lower":{
+            "col1":{
+                "title":"हमारे बारे में जानिए",
+                "about":"हमारे बारे में",
+                "careers":"करियर",
+                "press_release":"प्रेस विज्ञप्ति",
+                "investments":"निवेश",
+                "offers":"ऑफर"
+            },
+            "col2":{
+               "title":"हमारे साथ जुड़ें",
+                "facebook":"फेसबुक",
+                "instagram":"इंस्टाग्राम",
+                "twitter":"ट्विटर"
+            } ,
+            "col3":{
+               "title":"हमारे साथ पैसे कमाएँ",
+                "sell_on_amazon":"अमेज़न पर बेचें",
+                "affiliate":"संबद्ध विपणन",
+                "fulfillment":"पूर्ति केंद्र",
+                "investments":"निवेश",
+                "amazon_pay":"अमेज़न भुगतान"
+            } ,
+              "col4":{
+               "title":"हमें अपनी सहायता करने दें",
+                "covid_19":"कोविड 19",
+                "your_account":"आपका खाता",
+                "return_centre":"वापसी केंद्र",
+                "help":"मदद करना"
+            }
+        },
+        "lower_heading":"अमेजन डॉट कॉम"
+        
+        }
 }

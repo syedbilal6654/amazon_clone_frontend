@@ -1,9 +1,8 @@
 import React from 'react'
 
  function NavbarView(props) {
-  const {t,i18n}=props;
-  console.log(t('navbar.sidebar_title'));
-  console.log(i18n.language[0]);
+  const {t,rtl}=props;
+  console.log(rtl);
   return (
   <React.Fragment>
   
@@ -19,14 +18,14 @@ import React from 'react'
   aria-hidden="true" id="drawer-demo">
   <div className="drawer-content drawer-content-scrollable" role="document">
     <div className="drawer-header bg-dark text-white">
-      <h4 className="drawer-title mx-auto" id="drawer-demo-title"><i className="fa-regular fa-user"></i>
-        Hello, Sign In
+      <h4 className={`drawer-title mx-auto ${rtl}`} id="drawer-demo-title"><i className="fa-regular fa-user"></i>
+        {t('navbar.sidebar_title')}
       </h4>
     </div>
     <div className="drawer-body">
-      <h6 className="text-muted text-uppercase">Help and Settings</h6>
-      <a href="#" className="btn btn-outline-success my-2 btn-sm">Your Account</a>
-      <a href="../html/Login.html" className="btn btn-warning my-2 btn-sm">Sign In</a>
+      <h6 className={` text-muted text-uppercase ${rtl}` }>{t('navbar.sidebar_help')}</h6>
+      <a href="#" className={`btn btn-outline-success my-2 btn-sm ${rtl}`}> {t('navbar.btn_account_title')}</a>
+      <a href="../html/Login.html" className={`btn btn-warning my-2 btn-sm ${rtl}`}> {t('navbar.btn_signin_title')}</a>
     </div>
     <div className="drawer-footer"> <button type="button" className="btn btn-outline-danger btn-sm " data-dismiss="drawer"
         aria-label="Close">
@@ -45,22 +44,26 @@ import React from 'react'
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <form className="form-inline" method="" get noValidate>
+
+        <form className="form-inline" onSubmit={props            .handleSearch}  method="" get noValidate>
           <div className="input-group">
             <div className="input-group-prepend">
               <div className="dropdown px-2">
-                <button id="btnCategory" type="button" className="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
-                  All
+                <button id="btnCategory" type="button" className={`btn btn-secondary dropdown-toggle ${rtl}`} data-toggle="dropdown">
+                {t(props.productCategory[props.selectedCat])}
                 </button>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Action</a></li>
-                  <li><a className="dropdown-item" href="#">Another action</a></li>
-                  <li><a className="dropdown-item" href="#">Something else here</a></li>
+                  <li><a className={`dropdown-item ${rtl}`} onClick={(e)=>{props.handleCatChange(e,0)}} href="#">{t('navbar.product_category.all')}</a></li>
+                  <li><a className={`dropdown-item ${rtl}`} onClick={(e)=>{props.handleCatChange(e,1)}} href="#">{t('navbar.product_category.smartphone')}</a></li>
+                  <li><a className={`dropdown-item ${rtl}`} onClick={(e)=>{props.handleCatChange(e,2)}} href="#">{t('navbar.product_category.kitchen_hardware')}</a></li>
+                  <li><a className={`dropdown-item ${rtl}`} onClick={(e)=>{props.handleCatChange(e,3)}} href="#">{t('navbar.product_category.prime_deal')}</a></li>
+                  <li><a className={`dropdown-item ${rtl}`} onClick={(e)=>{props.handleCatChange(e,4)}} href="#">{t('navbar.product_category.book')}</a></li>
                 </ul>
               </div>
             </div>
-            <input type="text" className="form-control" size="50" name="query" id="" query />
-            <input type="text" name="category" value="" id="category" hidden />
+            <input type="text" className={`form-control ${rtl}`} size="50" name="query" id="" query 
+            onChange={props.handleQueryChange} value={props.query}/>
+            <input type="text" name="category" value={props.selectedCat} id="category" hidden />
             <div className="input-group-append">
               <button type="submit" className="btn btn-warning">
                 <i className="fa-solid fa-magnifying-glass"></i>
@@ -75,30 +78,34 @@ import React from 'react'
           <ul className="dropdown-menu ">
             <form className="p-3">
               <div className="custom-control custom-radio mb-2">
-                <input className="custom-control-input" type="radio" name="lang" id="enLang"/>
+                <input className="custom-control-input" type="radio" name="prefLang" id="enLang" value="en"  
+                onClick={props.handleChangeLang} checked={props.prefLang=="en"?true:false}/>
                 <label className="custom-control-label" htmlFor="enLang">
-                  <img src="asserts/img/flag/english.png" alt="" height="25" width="40"/> <b>English</b>
+                  <img src="asserts/img/flag/english.png" alt="" height="25" width="36"/> <b className={`${rtl}`}>{t('navbar.flag_en')}</b>
                 </label>
               </div>
               <div className="custom-control custom-radio mb-2">
-                <input className="custom-control-input" type="radio" name="lang" id="hinLang"/>
+                <input className="custom-control-input" type="radio" name="prefLang" id="hinLang" value="in" 
+                onClick={props.handleChangeLang} checked={props.prefLang=="in"?true:false}/>
                 <label className="custom-control-label" htmlFor="hinLang">
 
-                  <img src="asserts/img/flag/india.webp" alt="" height="25" width="40"/><b>Hindi</b>
+                  <img src="asserts/img/flag/india.webp" alt="" height="25" width="40"/><b className={`${rtl}`}>{t('navbar.flag_in')}</b>
                 </label>
               </div>
               <div className="custom-control custom-radio mb-2">
-                <input className="custom-control-input" type="radio" name="lang" id="urduLang"/>
+                <input className="custom-control-input" type="radio" name="prefLang" id="urduLang" value="pk"  
+                onClick={props.handleChangeLang} checked={props.prefLang=="pk"?true:false}/>
                 <label className="custom-control-label" htmlFor="urduLang">
 
-                  <img src="asserts/img/flag//flag-symbolism-Pakistan-design-Islamic.jpg" alt="" height="25"
-                    width="40"/><b>Pak</b>
+                  <img src="asserts/img/flag//flag-symbolism-Pakistan-design-Islamic.jpg" alt=""  height="25"
+                    width="40"/><b className={`${rtl}`}>{t('navbar.flag_pk')}</b>
                 </label>
               </div>
               <div className="custom-control custom-radio mb-2">
-                <input className="custom-control-input" type="radio" name="lang" id="benLang"/>
+                <input className="custom-control-input" type="radio" name="prefLang" id="benLang" value="bd" 
+                onClick={props.handleChangeLang} checked={props.prefLang=="bd"?true:false}/>
                 <label className="custom-control-label" htmlFor="benLang">
-                  <img src="asserts/img/flag/download.png" alt="" height="25" width="40"/><b>Bangla</b>
+                  <img src="asserts/img/flag/download.png" alt="" height="25" width="40"/><b className={`${rtl}`}>{t('navbar.flag_bd')}</b>
                 </label>
               </div>
             </form>
@@ -110,8 +117,8 @@ import React from 'react'
           </button>
           <ul className=" dropdown-menu px-3">
             <div className="d-flex flex-column justify-content-center">
-              <a href="./Login.html" className="btn btn-warning w-80 btn-sm "><b>Signin</b></a>
-              <small>New customer? <a href="#">Start here</a></small>
+              <a href="./Login.html" className="btn btn-warning w-80 btn-sm "><b>{t('navbar.menu_signin_btn_title')}</b></a>
+              <small className={`${rtl}`}>{t('navbar.menu_signin_sub_title')} <a href="#">{t('navbar.menu_signin_register_text')}</a></small>
             </div>
           </ul>
         </div>

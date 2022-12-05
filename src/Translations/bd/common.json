@@ -2,10 +2,87 @@
     "navbar": {
         "sidebar_title": "হ্যালো সাইন ইন",
         "sidebar_help": "সহায়তা এবং সেটিংস",
-        "btn_account_title":"আপনার অ্যাকাউন্ট",
-        "btn_signin_title":"সাইন ইন করুন",
-        "menu_signin_btn_title":"সাইন ইন করুন",
-        "menu_signin_sub_title":"নতুন গ্রাহক",
-        "menu_signin_register_text":"এখান থেকে শুরু কর"
+        "btn_account_title": "আপনার অ্যাকাউন্ট",
+        "flag_en": "ইংরেজি",
+        "flag_in": "হিন্দি",
+        "flag_pk": "উর্দু",
+        "flag_bd": "বাংলা",
+        "btn_signin_title": "সাইন ইন করুন",
+        "menu_signin_btn_title": "সাইন ইন করুন",
+        "menu_signin_sub_title": "নতুন গ্রাহক",
+        "menu_signin_register_text": "এখান থেকে শুরু কর",
+        "product_category": {
+            "all": "সব",
+            "smartphone": "স্মার্টফোন",
+            "kitchen_hardware": "রান্নাঘরের হার্ডওয়্যার",
+            "prime_deal": "প্রাইম ডিল",
+            "book": "বই"
+        }
+    },
+        "footer":{
+            "back_to_top": "वापस शीर्ष पर",
+            "upper": {
+                "col1": {
+                    "title": "আমাদের জানতে পারেন ",
+                    "about": "আমাদের সম্পর্কে",
+                    "careers": "কেরিয়ার",
+                    "press_release": "প্রেস রিলিজ",
+                    "investments": "বিনিয়োগ",
+                    "offers": "অফার"
+                },
+                "col2": {
+                    "title": "আমাদের সাথে অর্থ উপার্জন করুন",
+                    "facebook": "ফেসবুক ",
+                    "instagram": "ইনস্টাগ্রাম",
+                    "twitter": "টুইটার"
+                },
+                "col3": {
+                    "title": "আমাদের সাথে অর্থ উপার্জন করুন",
+                    "sell_on_amazon": "অ্যামাজনে বিক্রি করুন",
+                    "affiliate": "অ্যাফিলিয়েট মার্কেটিং ",
+                    "fulfillment": "পূর্ণতা কেন্দ্র",
+                    "investments": "বিনিয়োগ",
+                    "amazon_pay": "আমাজন পে"
+                },
+                "col4": {
+                    "title": "আমাদের আপনাকে সাহায্য করতে দিন",
+                    "covid_19": "কোভিড 19",
+                    "your_account": "আপনার অ্যাকাউন্ট ",
+                    "return_centre": "রিটার্ন সেন্টার",
+                    "help": "সাহায্য"
+                }
+            },
+            "lower": {
+                "col1": {
+                    "title": "আমাদের জানতে পারেন ",
+                    "about": "আমাদের সম্পর্কে",
+                    "careers": "কেরিয়ার",
+                    "press_release": "প্রেস রিলিজ",
+                    "investments": "বিনিয়োগ",
+                    "offers": "অফার"
+                },
+                "col2": {
+                    "title": "আমাদের সাথে অর্থ উপার্জন করুন",
+                    "facebook": "ফেসবুক ",
+                    "instagram": "ইনস্টাগ্রাম",
+                    "twitter": "টুইটার"
+                },
+                "col3": {
+                    "title": "আমাদের সাথে অর্থ উপার্জন করুন",
+                    "sell_on_amazon": "অ্যামাজনে বিক্রি করুন",
+                    "affiliate": "অ্যাফিলিয়েট মার্কেটিং ",
+                    "fulfillment": "পূর্ণতা কেন্দ্র",
+                    "investments": "বিনিয়োগ",
+                    "amazon_pay": "আমাজন পে"
+                },
+                "col4": {
+                    "title": "আমাদের আপনাকে সাহায্য করতে দিন",
+                    "covid_19": "কোভিড 19",
+                    "your_account": "আপনার অ্যাকাউন্ট ",
+                    "return_centre": "রিটার্ন সেন্টার",
+                    "help": "সাহায্য"
+                }
+            }
+        },
+        "lower_heading": "আমাজন.সহ"
     }
-}

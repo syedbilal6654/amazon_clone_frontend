@@ -3,9 +3,88 @@
         "sidebar_title": "Hello, Sign In",
         "sidebar_help": "HELP AND SETTINGS",
         "btn_account_title":"Your Account",
+       
+        "flag_en":"english",
+        "flag_in":"hindi",
+        "flag_pk":"urdu",
+        "flag_bd":"bangla",
         "btn_signin_title":"Sign In",
         "menu_signin_btn_title":"Signin",
         "menu_signin_sub_title":"New customer",
-        "menu_signin_register_text":"Start here"
+        "menu_signin_register_text":"Start here",
+        "product_category":{
+            "all":"All",
+            "smartphone":"Smartphone",
+            "kitchen_hardware":"Kitchen Hardware",
+            "prime_deal":"Prime Deal",
+            "book":"Book"
+        }
+    },
+    "footer":{
+        "back_to_top":"Back To Top",
+        "upper":{
+            "col1":{
+                "title":"Get to know us",
+                "about":"About us",
+                "careers":"Careers",
+                "press_release":"Press Release",
+                "investments":"Investments",
+                "offers":"Offers"
+            },
+            "col2":{
+               "title":"Connect with us",
+                "facebook":"Facebook",
+                "instagram":"Instagram",
+                "twitter":"Twitter"
+            } ,
+            "col3":{
+               "title":"Make money with us",
+                "sell_on_amazon":"Sell on Amazon",
+                "affiliate":"Affiliate Marketting",
+                "fulfillment":"Fulfillment Center",
+                "investments":"Investments",
+                "amazon_pay":"Amazon pay"
+            } ,
+              "col4":{
+               "title":"Let us help you",
+                "your_account":"Your Accout",
+                "return_centre":"Return Centre",
+                "covid_19":"Covid 19",
+                "help":"Help"
+            }
+        },
+        "lower":{
+            "col1":{
+                "title":"Get to know us",
+                "about":"About us",
+                "careers":"Careers",
+                "press_release":"Press Release",
+                "investments":"Investments",
+                "offers":"Offers"
+            },
+            "col2":{
+               "title":"Connect with us",
+                "facebook":"Facebook",
+                "instagram":"Instagram",
+                "twitter":"Twitter"
+            } ,
+            "col3":{
+               "title":"Make money with us",
+                "sell_on_amazon":"Sell on Amazon",
+                "affiliate":"Affiliate Marketting",
+                "fulfillment":"Fulfillment Center",
+                "investments":"Investments",
+                "amazon_pay":"Amazon pay"
+            } ,
+              "col4":{
+               "title":"Let us help you",
+                "sell_on_amazon":"Covid 19",
+                "affiliate":"Affiliate Marketting",
+                "your_account":"Your Accout",
+                "return_centre":"Return Centre",
+                "help":"Help"
+            }
+        },
+        "lower_heading":"Amazon.com"
     }
 }

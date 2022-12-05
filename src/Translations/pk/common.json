@@ -3,9 +3,87 @@
         "sidebar_title": "ہیلو، سائن ان کریں۔",
         "sidebar_help": "مدد اور ترتیبات",
         "btn_account_title":"آپ کا کھاتہ",
+        "flag_en":"انگریزی",
+        "flag_in":"ہندی",
+        "flag_pk":"اردو",
+        "flag_bd":"بنگلہ",
         "btn_signin_title":"سائن ان",
         "menu_signin_btn_title":"سائن ان",
         "menu_signin_sub_title":"نیا گاہک",
-        "menu_signin_register_text":"یہاں سے شروع کرو"
-    }
+        "menu_signin_register_text":"یہاں سے شروع کرو",
+        "product_category":{
+            "all":"تمام",
+            "smartphone":"اسمارٹ فون",
+            "kitchen_hardware":"کچن ہارڈ ویئر",
+            "prime_deal":"پرائم ڈیل",
+            "book":"کتاب"
+        }
+    },
+    "footer":{
+        "back_to_top":"اوپر کی طرف واپس",
+        "upper":{
+            "col1":{
+                "title":"ہمیں جانیں۔",
+                "about":"ہمارے بارے میں",
+                "careers":"کیریئرز",
+                "press_release":"اخبار کے لیے خبر",
+                "investments":"سرمایہ کاری",
+                "offers":"پیشکش کرتا ہے۔"
+            },
+            "col2":{
+               "title":"ہم سے رجوع فرمائیں",
+                "facebook":"فیس بک",
+                "instagram":"انسٹاگرام",
+                "twitter":"ٹویٹر"
+            } ,
+            "col3":{
+               "title":"ہمارے ساتھ پیسہ کمائیں۔",
+                "sell_on_amazon":"ایمیزون پر فروخت کریں۔",
+                "affiliate":"ملحق مارکیٹنگ",
+                "fulfillment":"تکمیل کا مرکز",
+                "investments":"سرمایہ کاری",
+                "amazon_pay":"ایمیزون تنخواہ"
+            } ,
+              "col4":{
+               "title":"",
+                "covid_19":"Covid 19",
+                "your_account":"آپ کا اکاؤنٹ",
+                "return_centre":"ریٹرن سینٹر",
+                "help":"مدد"
+            }
+        },
+        "lower":{
+            "col1":{
+                "title":"ہمیں جانیں۔",
+                "about":"ہمارے بارے میں",
+                "careers":"کیریئرز",
+                "press_release":"اخبار کے لیے خبر",
+                "investments":"سرمایہ کاری",
+                "offers":"پیشکش کرتا ہے۔"
+            },
+            "col2":{
+               "title":"ہم سے رجوع فرمائیں",
+                "facebook":"فیس بک",
+                "instagram":"انسٹاگرام",
+                "twitter":"ٹویٹر"
+            } ,
+            "col3":{
+               "title":"ہمارے ساتھ پیسہ کمائیں۔",
+                "sell_on_amazon":"ایمیزون پر فروخت کریں۔",
+                "affiliate":"ملحق مارکیٹنگ",
+                "fulfillment":"تکمیل کا مرکز",
+                "investments":"سرمایہ کاری",
+                "amazon_pay":"ایمیزون تنخواہ"
+            } ,
+              "col4":{
+               "title":"",
+                "covid_19":"Covid 19",
+                "your_account":"آپ کا اکاؤنٹ",
+                "return_centre":"ریٹرن سینٹر",
+                "help":"مدد"
+            }
+        },
+        "lower_heading":"ایمیزون.شریک"
+        
+        }
 }

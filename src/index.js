@@ -11,7 +11,7 @@ import common_pk from "../src/Translations/pk/common.json";
 i18next.init({
     whitelist:['pk','en','bd','in'],
     interpolation: { escapeValue: false },  
-    lng: 'bd',                             
+    lng: 'en',                             
     resources: {
         en: {
             common: common_en               
