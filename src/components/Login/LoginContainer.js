@@ -29,6 +29,7 @@ handleSubmit=(e)=>{
      handleChange={this.handleChange}
      handleSubmit={this.handleSubmit}
      {...this.state}
+     {...this.props}
      />
     )
   }

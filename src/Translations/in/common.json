@@ -85,5 +85,17 @@
         },
         "lower_heading":"अमेजन डॉट कॉम"
         
+        },
+        "login":{
+            "title":"लॉग इन करें",
+            "lbl_email":"ईमेल",
+            "password":"पासवर्ड",
+            "email_info":" हम आपका ईमेल कभी किसी और के साथ साझा नहीं करेंगे।",
+            "password_info":" पासवर्ड कम से कम 6 अंकों का होना चाहिए",
+            "btn_signin":"साइन इन करें",
+            "seperator":"अमेज़ॅन के लिए नया?",
+            "btn_create_account":"खाता बनाएं",
+            "btn_signin_google":"गूगल के साथ साइन इन करें",
+            "btn_signin_facebook":"फ़ेसबुक से साइन इन करें"
         }
 }

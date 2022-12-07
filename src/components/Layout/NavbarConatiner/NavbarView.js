@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
  function NavbarView(props) {
   const {t,rtl}=props;
@@ -24,8 +25,8 @@ import React from 'react'
     </div>
     <div className="drawer-body">
       <h6 className={` text-muted text-uppercase ${rtl}` }>{t('navbar.sidebar_help')}</h6>
-      <a href="#" className={`btn btn-outline-success my-2 btn-sm ${rtl}`}> {t('navbar.btn_account_title')}</a>
-      <a href="../html/Login.html" className={`btn btn-warning my-2 btn-sm ${rtl}`}> {t('navbar.btn_signin_title')}</a>
+      <Link to="#" className={`btn btn-outline-success my-2 btn-sm ${rtl}`}> {t('navbar.btn_account_title')}</Link>
+      <Link to="/login" className={`btn btn-warning my-2 btn-sm ${rtl}`}> {t('navbar.btn_signin_title')}</Link>
     </div>
     <div className="drawer-footer"> <button type="button" className="btn btn-outline-danger btn-sm " data-dismiss="drawer"
         aria-label="Close">
@@ -36,9 +37,9 @@ import React from 'react'
 </div>
    {/*  <!-- drawer ends --> */}
     <div className="container-fluid">
-      <a className="navbar-brand" href="#">
+      <Link className="navbar-brand" to="/">
         <img src="asserts/img/Amazon-Logo-Transparent-1024x310.png" height="30" width="100" alt=""/>
-      </a>
+      </Link>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
@@ -53,11 +54,11 @@ import React from 'react'
                 {t(props.productCategory[props.selectedCat])}
                 </button>
                 <ul className="dropdown-menu">
-                  <li><a className={`dropdown-item ${rtl}`} onClick={(e)=>{props.handleCatChange(e,0)}} href="#">{t('navbar.product_category.all')}</a></li>
-                  <li><a className={`dropdown-item ${rtl}`} onClick={(e)=>{props.handleCatChange(e,1)}} href="#">{t('navbar.product_category.smartphone')}</a></li>
-                  <li><a className={`dropdown-item ${rtl}`} onClick={(e)=>{props.handleCatChange(e,2)}} href="#">{t('navbar.product_category.kitchen_hardware')}</a></li>
-                  <li><a className={`dropdown-item ${rtl}`} onClick={(e)=>{props.handleCatChange(e,3)}} href="#">{t('navbar.product_category.prime_deal')}</a></li>
-                  <li><a className={`dropdown-item ${rtl}`} onClick={(e)=>{props.handleCatChange(e,4)}} href="#">{t('navbar.product_category.book')}</a></li>
+                  <li><Link className={`dropdown-item ${rtl}`} onClick={(e)=>{props.handleCatChange(e,0)}} to="#">{t('navbar.product_category.all')}</Link></li>
+                  <li><Link className={`dropdown-item ${rtl}`} onClick={(e)=>{props.handleCatChange(e,1)}} to="#">{t('navbar.product_category.smartphone')}</Link></li>
+                  <li><Link className={`dropdown-item ${rtl}`} onClick={(e)=>{props.handleCatChange(e,2)}} to="#">{t('navbar.product_category.kitchen_hardware')}</Link></li>
+                  <li><Link className={`dropdown-item ${rtl}`} onClick={(e)=>{props.handleCatChange(e,3)}} to="#">{t('navbar.product_category.prime_deal')}</Link></li>
+                  <li><Link className={`dropdown-item ${rtl}`} onClick={(e)=>{props.handleCatChange(e,4)}} to="#">{t('navbar.product_category.book')}</Link></li>
                 </ul>
               </div>
             </div>
@@ -117,17 +118,17 @@ import React from 'react'
           </button>
           <ul className=" dropdown-menu px-3">
             <div className="d-flex flex-column justify-content-center">
-              <a href="./Login.html" className="btn btn-warning w-80 btn-sm "><b>{t('navbar.menu_signin_btn_title')}</b></a>
-              <small className={`${rtl}`}>{t('navbar.menu_signin_sub_title')} <a href="#">{t('navbar.menu_signin_register_text')}</a></small>
+              <Link to="/login" className="btn btn-warning w-80 btn-sm "><b>{t('navbar.menu_signin_btn_title')}</b></Link>
+              <small className={`${rtl}`}>{t('navbar.menu_signin_sub_title')} <Link to="/register">{t('navbar.menu_signin_register_text')}</Link></small>
             </div>
           </ul>
         </div>
-        <a className="nav-item ml-3" href="#" aria-disabled="true">
+        <Link className="nav-item ml-3" to="#" aria-disabled="true">
           <i className="fa-2x text-light fa-solid fa-cart-arrow-down"></i>
           <span className="badge badge-warning badge-pill">
             1
           </span>
-        </a>
+        </Link>
       </div>
     </div>
   </nav>

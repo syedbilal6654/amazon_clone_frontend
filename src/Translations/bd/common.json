@@ -82,7 +82,19 @@
                     "return_centre": "রিটার্ন সেন্টার",
                     "help": "সাহায্য"
                 }
-            }
+            },
+            "lower_heading": "আমাজন.সহ"
         },
-        "lower_heading": "আমাজন.সহ"
+        "login":{
+            "title":"প্রবেশ করুন",
+            "lbl_email":"ইমেইল",
+            "password":"পাসওয়ার্ড",
+            "email_info":"আমরা অন্য কারো সাথে আপনার ইমেল শেয়ার করব না.",
+            "password_info":"পাসওয়ার্ড কমপক্ষে 6 অক্ষরের হতে হবে",
+            "btn_signin":"সাইন ইন করুন",
+            "seperator":"অ্যামাজনে নতুন?",
+            "btn_create_account":"হিসাব তৈরি কর",
+            "btn_signin_google":"দিয়ে সাইন ইন গুগল",
+            "btn_signin_facebook":"দিয়ে সাইন ইন ফেসবুক"
+        }
     }
